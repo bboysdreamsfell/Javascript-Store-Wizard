@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--TITLE-->
+<title>Platform</title>
+
+<!--SHORTCUT ICON-->
+<link rel="shortcut icon" href="assets/images/icon.png" />
+
+<!--META TAGS-->
+<meta charset="UTF-8" />
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+
+<!--JQUERY CDN-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!--ICONIFY CDN-->
+<script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+
+<!--ANIMATION-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<!--STYLE SHEET-->
+<link rel="stylesheet" href="assets/css/home.css" />
+
+</head>
+<body>
+
+<!--MAIN-->
+<main>  
+
+    <!--NAV-->
+    <nav>
+        <figure class="logo text-focus-in">
+            <img src="assets/images/logo.png" alt="Platform" />
+        </figure>
+        <ul class="icon_buttons text-focus-in">
+            <li>
+                <a href="javascript:void(0)" class="icon_btn logout_btn hint hint--left tab_transition_btn" aria-label="Profile" data-label="profile">
+                    <iconify-icon icon="mingcute:user-3-line" class="icon"></iconify-icon>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="icon_btn logout_btn hint hint--left" aria-label="LogOut">
+                    <iconify-icon icon="streamline-flex:logout-1-remix" class="icon"></iconify-icon>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!--DIVISION-->
+    <div class="division_1 flex padding_1">
+        <div class="left_division flex">
+            <menu class="tab_transition_buttons text-focus-in">
+                <button class="tab_transition_btn active" data-label="storeinfo">
+                    <iconify-icon icon="mynaui:store-solid" class="icon"></iconify-icon>
+                    <span class="text">Store Info</span>
+                </button>
+                <button class="tab_transition_btn" data-label="system">
+                    <iconify-icon icon="hugeicons:system-update-02" class="icon"></iconify-icon>
+                    <span class="text">System</span>
+                </button>
+                <button class="tab_transition_btn" data-label="styles">
+                    <iconify-icon icon="mdi:paint-outline" class="icon"></iconify-icon>
+                    <span class="text">Styles</span>
+                </button>
+                <button class="tab_transition_btn" data-label="pluginsettings">
+                    <iconify-icon icon="bi:plugin" class="icon"></iconify-icon>
+                    <span class="text">Plugin Settings</span>
+                </button>
+                <button class="tab_transition_btn" data-label="summary">
+                    <iconify-icon icon="streamline-ultimate:layout-content" class="icon"></iconify-icon>
+                    <span class="text">Summary</span>
+                </button>
+            </menu>
+            <footer class="fixed_flex text-focus-in">
+               <button class="tab_transition_btn" data-label="mysites">
+                    <iconify-icon icon="el:website" class="icon"></iconify-icon>
+                    <span class="text">My Sites</span>
+                </button>
+            </footer>
+        </div>
+        <div class="right_division flex_content">
+            <!--**************************************
+                        section begining
+            ******************************************-->
+            <section class="sections section_1 tab_transition_content padding_2" data-label="storeinfo">
+                <article class="content text-focus-in">
+                    <h1 class="title big">Let's build your fresh Javascript website</h1>
+                    <p>Our Javascript Builder is a no-code platform that lets you effortlessly create and launch a complete Javascript store. Just follow the guided steps, provide some basic details, and we'll ensure your site, including approved third-party integrations, is perfectly tailored to your needs.</p>
+                </article>
+                <form>
+                    <fieldset class="text-focus-in">
+                        <label for="s_name"><small>Store Name</small></label>
+                        <aside class="input_field fixed_flex">
+                            <input type="text" name="storename" id="storename" maxlength="100" placeholder="Platform" input-mode="text" />
+                            <iconify-icon icon="jam:check" class="icon success"></iconify-icon>
+                        </aside>
+                    </fieldset>
+                    <hgroup class="input_field_details fixed_flex text-focus-in">
+                        <small class="availability success">Store name available</small>
+                        <small class="counter" aria-label="storename" data-label="100">0/100</small>
+                    </hgroup>
+                </form>
+                <!--snackbar begining-->
+                <article class="snackbar fixed_flex padding_1 text-focus-in">
+                    <iconify-icon icon="carbon:warning-filled" class="icon warning"></iconify-icon>
+                    <hgroup class="flex">
+                        <strong>Licensing</strong>
+                        <p>Depending on your modules and theme, you may need to add your license key to demo and/or download your. development -ready package.</p>
+                    </hgroup>
+                </article>
+                <!--snackbar ends-->
+                <ul class="buttons text-focus-in">
+                    <li><a href="javascript:void(0)" class="btn btn_dark" data-label="system">Next Step</a></li>
+                </ul>
+            </section>
+            <!--**************************************
+                        section ends
+            ******************************************-->
+            <!--**************************************
+                        section begining
+            ******************************************-->
+            <section class="sections section_2 tab_transition_content padding_2" data-label="system">
+                <article class="content text-focus-in">
+                    <h1 class="title big">Environment setup</h1>
+                    <p>Select your platform</p>
+                </article>
+                <form class="flex">
+                    <fieldset class="flex platform image_labelled_buttons">
+                        <label for="react" class="image_labelled_btn text-focus-in">
+                            <input type="radio" name="platform" id="react" value="react" />
+                            <span class="icon"><iconify-icon icon="devicon:react" class="big"></iconify-icon></span>
+                            <p>React</p>
+                        </label>
+                        <label for="angular" class="image_labelled_btn text-focus-in">
+                            <input type="radio" name="platform" id="angular" value="angular" />
+                            <span class="icon"><iconify-icon icon="devicon:angular" class="big"></iconify-icon></span>
+                            <p>Angular</p>
+                        </label>
+                        <label for="svelte" class="image_labelled_btn text-focus-in">
+                            <input type="radio" name="platform" id="svelte" value="svelte" />
+                            <span class="icon"><iconify-icon icon="devicon:svelte" class="big"></iconify-icon></span>
+                            <p>Svelte</p>
+                        </label>
+                    </fieldset>
+                    <!--<fieldset class="platformversion">
+                        <label for="platformversion"><small>Select Versions</small></label>
+                        <aside class="input_field fixed_flex">
+                            <select name="platformversion" id="platformversion">
+                                <option value="9">Laravel 9</option>
+                            </select>
+                        </aside>
+                    </fieldset>-->
+                    <!--<fieldset class="versiondependencies image_labelled_buttons flex">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Depedencies</th>
+                                    <th>Version</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="icon">
+                                            <iconify-icon icon="devicon:php" class="medium"></iconify-icon>
+                                            <small>PHP</small>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        8.0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="icon">
+                                            <span class="icon"><iconify-icon icon="devicon:mariadb" class="medium"></iconify-icon></span>
+                                            <small>MariaDB</small>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        10.3
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="icon">
+                                            <span class="icon"><iconify-icon icon="devicon:redis" class="medium"></iconify-icon></span>
+                                            <small>Reddis</small>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        6.0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="icon">
+                                            <span class="icon"><iconify-icon icon="logos:opensearch-icon" class="medium"></iconify-icon></span>
+                                            <small>OpenSearch</small>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <iconify-icon icon="clarity:times-circle-solid" class="failure hint hint--left" aria-label="N/A"></iconify-icon>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>-->
+                </form>
+                <ul class="buttons text-focus-in">
+                    <li><a href="javascript:void(0)" class="btn btn_gray" data-label="storeinfo">Back</a></li>
+                    <li><a href="javascript:void(0)" class="btn btn_dark" data-label="styles">Next Step</a></li>
+                </ul>
+            </section>
+            <!--**************************************
+                        section ends
+            ******************************************-->
+        </div>
+    </div>
+
+</main>
+
+<!--JAVASCRIPT-->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/home.js"></script>
+</body>
+</html>

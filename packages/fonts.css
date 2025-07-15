@@ -1,0 +1,10 @@
+/*********************************
+            IMPORT
+**********************************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --default_font: "Montserrat", sans-serif;
+    --title_font: "Montserrat", sans-serif;
+    --styled_font: "Montserrat", sans-serif;
+}

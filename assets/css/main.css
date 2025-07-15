@@ -1,0 +1,80 @@
+/*********************************
+     IMPORT DEFAULT PACKAGE
+**********************************/
+@import "./../../packages/default.css";
+
+
+/*********************************
+      IMPORT HINT TOOLTIP
+**********************************/
+@import "./hint/hint.css"; 
+
+
+/*********************************
+       IMPORT ANIMATION
+**********************************/
+@import "./animation.css";
+
+
+/*********************************
+       DEFAULT SETTING
+**********************************/
+body{
+    background-color:var(--cream);
+    color:var(--black);
+}
+
+p{
+    color:var(--gray);
+}
+
+.logo, .logo img{
+    max-width:120px;
+}
+
+.title, .sub_title{
+    font-weight:500;
+    color:var(--dark);
+}
+
+@media (max-width:540px){
+    .logo, .logo img{
+        max-width:100px;
+    }
+}
+
+
+/*********************************
+             NAV
+**********************************/
+nav{
+    width:100%;
+    padding:1rem;
+    padding-bottom:0 !important;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+nav .icon_buttons{
+    gap:10px;
+}
+
+nav .icon_btn{
+    padding:0.6rem !important;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:5px;
+    background-color:var(--dark);
+    color:var(--cream);
+    transition:0.1s;
+}
+
+nav .icon_btn:active{
+    transform:scale(0.9);
+}
+
+nav .icon_btn .icon{
+    color:inherit;
+}

@@ -1,0 +1,105 @@
+/*********************************
+        DEFAULT SETTING
+**********************************/
+.buttons{
+    display:flex;
+    gap:10px;
+}
+
+.btn{
+    padding:0.6rem 1rem;
+    color:inherit;
+    white-space:nowrap;
+}
+
+/*btn_dark*/
+.btn_dark, .btn_gray {
+    appearance: none;
+    background-color: var(--black);
+    border: 2px solid var(--dark);
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: var(--white);
+    margin: 0;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.btn_dark:disabled, .btn_gray:disabled {
+    pointer-events: none;
+}
+
+.btn_dark:hover, .btn_gray:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.btn_dark:active, .btn_gray:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.btn_gray{
+    background-color:var(--gray);
+    border:2px solid #6d757c;
+}
+
+/*********************************
+        CUSTOM BUTTONS
+**********************************/
+.img_btn, .img_btn img{
+    max-width:150px;
+}
+
+/*Mainly for icon buttons on nav*/
+.icon_buttons{
+    display:flex;
+    align-items:center;
+}
+
+.icon_buttons .icon_btn{
+    padding:0.6rem 1rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.icon_buttons .icon_btn .icon{
+    background-color:transparent;
+}
+
+.arrow_btn:after{
+    content:"\f061";
+    font-family:"FontAwesome";
+    margin-left:5px;
+    transition:0.5s;
+}
+
+.arrow_btn:hover{
+    color:var(--black);
+}
+
+.arrow_btn:hover:after{
+    margin-left:10px;
+}
+
+/*Mainly for links on footer*/
+.dotted_link{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+
+.dotted_link:before{
+    content:"\f111";
+    font-family:"FontAwesome";
+    font-size:10px;
+}
+
+/*Social icons*/
+.social_icons{
+    gap:10px;
+}
